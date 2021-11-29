@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let v1 = 8, m1 = 29; // departure time
+        let m2 = 23; // walking time
+        let m3 = m1 + m2; // minute calculation
+        let v = 9, m = 5 // school start time
+        if(m3 >= 60){
+            v1 += 1;
+            m3 -= 60;
+            if(v1 <= v && (m3 <= m)){
+                console.log("Petras i pamoka nepaveluos");
+            }
+        }
+        else if (v1 < v && m3 < 60){
+            console.log("Petras i pamoka nepaveluos");
+        }
+        else{
+            console.log("Petras i pamoka paveluos");
+        }
+    </script>
+</body>
+</html>
