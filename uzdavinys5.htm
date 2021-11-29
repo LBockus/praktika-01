@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 222442; // lucky ticket
+        let a = 0; // individual number sum
+        let j = 1;        
+        for(i = 0; i < 6; i++)
+        {
+            a = a + Math.floor(n / j % 10);
+            j = j * 10;
+        }
+        if (a / 4 % 2 == 0){
+            console.log("Bilietas laimingas");
+        }
+        else{
+            console.log("Bilietas nelaimingas");
+        }
+        
+    </script>
+</body>
+</html>
